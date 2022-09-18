@@ -98,16 +98,21 @@ public class Menu {
   private void printShortestPath() {
     Graph airportsGraph =new Graph(airportsList);
     Node destinyNode = DijkstraAlgorithm.calculateShortestPathFromSource(airportsGraph, originCode, destinyCode);
+    String stopoverCode = destinyNode.getShortestPath().get(1).getAirport().getCode();
     Scanner sc = new Scanner(System.in);
-        
-        System.out.printf("\nTrecho %s -> %s\n", originCode, destinyCode);
-        System.out.println("---------------------");
-        System.out.print("| ");
 
-        for(Node apNode: destinyNode.getShortestPath()) {
-            System.out.print(apNode.getAirport().getCode());
-            System.out.print(" -> ");
+    Database.insertRoute(originCode,destinyCode,stopoverCode);
+
+    System.out.printf("\nTrecho %s -> %s\n", originCode, destinyCode);
+    System.out.println("---------------------");
+    System.out.print("| ");
+
+    for(Node apNode: destinyNode.getShortestPath()) {
+          System.out.print(apNode.getAirport().getCode());
+          System.out.print(" -> ");
         }
+
+
         System.out.println(destinyCode);
         System.out.printf("| %.2f Km\n\n",destinyNode.getDistance());
 

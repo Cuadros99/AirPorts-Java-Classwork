@@ -10,7 +10,7 @@ public class ReadCSV {
     // Return an ArrayList with the data collected from a csv file
     public static ArrayList<Airport> getAirportsData() throws Exception {
         ArrayList<Airport> airportsList = new ArrayList<>();
-        Scanner sc = new Scanner(new File("src/Principal/planilhaAeroportos.csv"));
+        Scanner sc = new Scanner(new File("Airports/src/Principal/planilhaAeroportos.csv"));
         sc.useDelimiter(",|\n");
         sc.nextLine();
         while (sc.hasNext()) {
