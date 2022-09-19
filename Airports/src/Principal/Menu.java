@@ -101,7 +101,7 @@ public class Menu {
     String stopoverCode = destinyNode.getShortestPath().get(1).getAirport().getCode();
     Scanner sc = new Scanner(System.in);
 
-    Database.insertRoute(originCode,destinyCode,stopoverCode);
+    Database.insertRouteOnDB(originCode,destinyCode,stopoverCode);
 
     System.out.printf("\nTrecho %s -> %s\n", originCode, destinyCode);
     System.out.println("---------------------");

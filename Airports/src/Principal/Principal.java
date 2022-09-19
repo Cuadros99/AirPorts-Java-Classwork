@@ -9,7 +9,7 @@ public class Principal {
         ArrayList<Airport> airportsList = new ArrayList<Airport>();
 
         // Store the data collected from a csv file inside an ArrayList
-        airportsList = ReadCSV.getAirportsData();
+        airportsList = Database.getAirportsData();
 
         // Create a menu with the airport data provided
         Menu mainMenu = new Menu(airportsList);
