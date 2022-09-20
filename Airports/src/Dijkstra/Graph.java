@@ -45,13 +45,6 @@ public class Graph {
     }
 
     //Getters
-    public Node getNode(Node requestedNode) {
-        for(Node apNode: airPortNodes) {
-            if(apNode.getAirport().getCode() == requestedNode.getAirport().getCode())
-                return apNode;
-        }
-        return null;
-    }
     public Node getNodeByCode(String code) {
         for(Node apNode: airPortNodes) {
             if(code.equals(apNode.getAirport().getCode()))
