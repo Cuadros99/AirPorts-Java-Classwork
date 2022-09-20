@@ -1,12 +1,12 @@
 # AirPorts-Java-Classwork
 
-## Resumo do Projeto
+# Resumo do Projeto
 
 ---
 
 Aplicação escrita em Java que calcula a menor rota entre dois aeroportos internacionais do Brasil que contenha pelo menos uma escala. Para isso foram utilizados o algoritmo de Dijkstra e um Banco de dados MySql.
 
-## Estrutura do programa
+# Estrutura do programa
 
 ---
 
@@ -14,11 +14,11 @@ O projeto foi dividido em dois **packages:** Principal e Dijkstra .
 
 O segundo engloba as classes criadas especificamente para a implementação do algoritmo de Dijkstra, enquanto o primeiro contém as classes restantes que foram utilizadas no programa, como a interface com o usuário e o acesso ao banco de dados da aplicação.
 
-### 1. Principal
+## 1. Principal
 
 ---
 
-#### 1.1) Principal
+### 1.1) Principal
 
 Classe que contém a função `main()` da aplicação. Nela é chamado o método `getAirportsData()` para obter uma *ArrayList<Airport>* com os dados dos aeroportos internacionais brasileiros. Em seguida é instanciado um objeto da classe **Menu** que realizará a interface com o usuário. Por último é chamado o método `showMenu()` desse objeto para iniciar a interação.
 
@@ -42,7 +42,7 @@ public class Principal {
 }
 ```
 
-#### 1.2) Airport
+### 1.2) Airport
 
 Classe que define a estrutura de um aeroporto para a aplicação. 
 
@@ -108,7 +108,7 @@ public class Airport {
 }
 ```
 
-#### 1.3) Menu
+### 1.3) Menu
 
 - **Atributos:**
     - **airportsList:** *ArrayList<Airport>* contendo os objetos referentes a todos os aeroportos internacionais do Brasil;
@@ -357,7 +357,7 @@ public class Menu {
 }
 ```
 
-#### 1.4) Database
+### 1.4) Database
 
 - **Métodos:**
     - **insertRouteOnDB:** insere no banco de dados o resultado do cálculo de menor rota para uma determinada consulta;
@@ -422,11 +422,11 @@ public class Database {
 }
 ```
 
-### 2. Dijkstra
+## 2. Dijkstra
 
 ---
 
-#### 2.1) Node
+### 2.1) Node
 
 - **Atributos:**
     - **ap:** objeto da classe **Airport** que contém as informações a respeito do aeroporto relacionado ao nó;
@@ -481,7 +481,7 @@ public class Node {
 }
 ```
 
-#### 2.2) Graph
+### 2.2) Graph
 
 - **Atributos:**
     - **airPortNodes:** um *HashSet<Node>* com os nós que formam o grafo.
@@ -554,7 +554,7 @@ public class Graph {
 }
 ```
 
-#### 2.3) DijkstraAlgorithm
+### 2.3) DijkstraAlgorithm
 
 - **Métodos:**
     - **calculateShortestPathFromSource:** cria dois *HashSet<Node>*, um para os nós não analisados (unsettledNodes) e outro para os nós que foram analisados (settledNodes). Então, ele chama o método **filterSourceNode** para remover a adjacência entre o nó de origem e o nó de destino (para garantirmos ao menos uma escala na rota resultante). Em seguida, é adicionado a unsettledNodes o nó de origem e então se inicia a estrutura de repetição do algoritmo:
@@ -628,31 +628,31 @@ public class DijkstraAlgorithm {
 }
 ```
 
-## Banco de Dados
+# Banco de Dados
 
 ---
 
 Para esse projeto foi utilizado o Banco de Dados MySql. Nele foram criadas duas tabelas: **airports** e **routes**
 
-### 1. airports
+## 1. airports
 
 *Tabela com as informações sobre os aeroportos internacionais do Brasil*
 
 ---
 
-#### Esquema da relação
+### Esquema da relação
 
 **R( sigla:** text**, latitude:** double**, longitude:** double**, name:** text**, city:** text**, state:** text**)** 
 
 ![Untitled](images/table-airports.png)
 
-### 2. routes
+## 2. routes
 
 *Tabela com os resultados das consultas realizadas na aplicação*
 
 ---
 
-#### Esquema da relação
+### Esquema da relação
 
 **R( id:** int**, originAp:** char(3)**, destinyAp:** char(3)**, stopover:** char(3)**)** 
 
