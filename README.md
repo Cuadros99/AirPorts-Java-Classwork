@@ -654,7 +654,7 @@ Para esse projeto foi utilizado o Banco de Dados MySql. Nele foram criadas duas 
 
 ### Esquema da relação
 
-**R( id:** int**, originAp:** char(3)**, destinyAp:** char(3)**, stopover:** char(3)**)** 
+**R( id:** int, **originAp:** char(3)**, destinyAp:** char(3)**, stopover:** char(3)**)** 
 
 ![Untitled](images/table-routes.png)
 
