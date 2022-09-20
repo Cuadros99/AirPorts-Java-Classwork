@@ -643,9 +643,9 @@ Para esse projeto foi utilizado o Banco de Dados MySql. Nele foram criadas duas 
 
 ### Esquema da relação
 
-**R( sigla:** text**, latitude:** double**, longitude:** double**, name:** text**, city:** text**, state:** text**)** 
+**R( sigla:** text, **latitude:** double, **longitude:** double, **name:** text, **city:** text, **state:** text**)** 
 
-![Untitled](images/table-airports.png)
+![table-airports](images/table-airports.png)
 
 ## 2. routes
 
@@ -656,6 +656,6 @@ Para esse projeto foi utilizado o Banco de Dados MySql. Nele foram criadas duas 
 
 **R( id:** int, **originAp:** char(3)**, destinyAp:** char(3)**, stopover:** char(3)**)** 
 
-![Untitled](images/table-routes.png)
+![table-routes](images/table-routes.png)
 
 
