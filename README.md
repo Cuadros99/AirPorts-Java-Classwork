@@ -75,8 +75,7 @@ public class Airport {
 
 // METHODS
     // Constructor
-    public Airport(String code, String name, String city, 
-										String state, Double latit, Double longit) {
+    public Airport(String code, String name, String city, String state, Double latit, Double longit) {
         this.code = code;
         this.name = name;
         this.city = city;
@@ -643,7 +642,7 @@ Para esse projeto foi utilizado o Banco de Dados MySql. Nele foram criadas duas 
 
 ### Esquema da relação
 
-**R( sigla:** text, **latitude:** double, **longitude:** double, **name:** text, **city:** text, **state:** text**)** 
+**R( sigla:** text, **latitude:** double, **longitude:** double, **name:** text, **city:** text, **state:** text **)** 
 
 ![table-airports](images/table-airports.png)
 
@@ -654,7 +653,7 @@ Para esse projeto foi utilizado o Banco de Dados MySql. Nele foram criadas duas 
 
 ### Esquema da relação
 
-**R( id:** int, **originAp:** char(3)**, destinyAp:** char(3)**, stopover:** char(3)**)** 
+**R( id:** int, **originAp:** char(3)**, destinyAp:** char(3)**, stopover:** char(3) **)** 
 
 ![table-routes](images/table-routes.png)
 
