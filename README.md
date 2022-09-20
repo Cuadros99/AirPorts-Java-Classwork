@@ -2,13 +2,11 @@
 
 # Resumo do Projeto
 
----
 
 Aplicação escrita em Java que calcula a menor rota entre dois aeroportos internacionais do Brasil que contenha pelo menos uma escala. Para isso foram utilizados o algoritmo de Dijkstra e um Banco de dados MySql.
 
 # Estrutura do programa
 
----
 
 O projeto foi dividido em dois **packages:** Principal e Dijkstra . 
 
@@ -16,7 +14,6 @@ O segundo engloba as classes criadas especificamente para a implementação do a
 
 ## 1. Principal
 
----
 
 ### 1.1) Principal
 
@@ -630,7 +627,6 @@ public class DijkstraAlgorithm {
 
 # Banco de Dados
 
----
 
 Para esse projeto foi utilizado o Banco de Dados MySql. Nele foram criadas duas tabelas: **airports** e **routes**
 
@@ -638,7 +634,6 @@ Para esse projeto foi utilizado o Banco de Dados MySql. Nele foram criadas duas 
 
 *Tabela com as informações sobre os aeroportos internacionais do Brasil*
 
----
 
 ### Esquema da relação
 
@@ -650,7 +645,6 @@ Para esse projeto foi utilizado o Banco de Dados MySql. Nele foram criadas duas 
 
 *Tabela com os resultados das consultas realizadas na aplicação*
 
----
 
 ### Esquema da relação
 
