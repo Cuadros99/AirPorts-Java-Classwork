@@ -1,11 +1,17 @@
-# AirPorts-Java-Classwork
+# Relatório do Projeto
 
 # Resumo do Projeto
 
 
+
 Aplicação escrita em Java que calcula a menor rota entre dois aeroportos internacionais do Brasil que contenha pelo menos uma escala. Para isso foram utilizados o algoritmo de Dijkstra e um Banco de dados MySql.
 
+O projeto pode ser encontrado no repositório abaixo:
+
+[https://github.com/Cuadros99/AirPorts-Java-Classwork](https://github.com/Cuadros99/AirPorts-Java-Classwork)
+
 # Estrutura do programa
+
 
 
 O projeto foi dividido em dois **packages:** Principal e Dijkstra . 
@@ -13,6 +19,7 @@ O projeto foi dividido em dois **packages:** Principal e Dijkstra .
 O segundo engloba as classes criadas especificamente para a implementação do algoritmo de Dijkstra, enquanto o primeiro contém as classes restantes que foram utilizadas no programa, como a interface com o usuário e o acesso ao banco de dados da aplicação.
 
 ## 1. Principal
+
 
 
 ### 1.1) Principal
@@ -421,7 +428,6 @@ public class Database {
 
 ## 2. Dijkstra
 
----
 
 ### 2.1) Node
 
@@ -651,3 +657,5 @@ Para esse projeto foi utilizado o Banco de Dados MySql. Nele foram criadas duas 
 **R( id:** int**, originAp:** char(3)**, destinyAp:** char(3)**, stopover:** char(3)**)** 
 
 ![Untitled](images/table-routes.png)
+
+
