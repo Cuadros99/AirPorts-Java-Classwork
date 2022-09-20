@@ -52,7 +52,7 @@ Classe que define a estrutura de um aeroporto para a aplicação.
 
 - **Atributos:**
     - **code:** string de 3 letras que representa o código do aeroporto;
-    - **name: ****string que representa o nome do aeroporto;
+    - **name:** string que representa o nome do aeroporto;
     - **city:** string que representa a cidade em que se encontra o aeroporto;
     - **state:** string que representa o estado em que se encontra o aeroporto.
 - **Métodos:**
